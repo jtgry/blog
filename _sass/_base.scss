@@ -14,15 +14,18 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-    color: $text-color;
-    background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-feature-settings: "kern" 1;
-    -moz-font-feature-settings: "kern" 1;
-    -o-font-feature-settings: "kern" 1;
-    font-feature-settings: "kern" 1;
-    font-kerning: normal;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  letter-spacing: $base-letter-spacing;
+  line-height: $base-line-height;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  -ms-font-feature-settings: normal;
 
 }
 
@@ -38,6 +41,22 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
+p,a,ul,li,ol,ul,tr,td{
+  font-size: 1.4rem;
+}
+p {
+  font-family: $base-font-family;
+  color: $text-color;
+  letter-spacing: -.01em;
+}
+.post-content p:first-of-type:first-letter {
+  font-size: 3.4em;
+  padding: .28em .1em 0 0;
+  margin: 0;
+  float: left;
+  line-height: .5;
+  font-weight: 400;
+}
 
 
 /**
