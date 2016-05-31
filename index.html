@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">{{ site.title }}</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">
+          <div class="post-item {% if post.featured == true %}featured{% endif %}">
+            <div class="post-item-image" style="background-image: url({{ post.image_path }});">
+              <div class="post-item-overlay"></div>
+              <h2 class="text-center post-item-title">{{ post.title }}</h2>
+            </div>
+
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
