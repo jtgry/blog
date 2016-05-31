@@ -3,17 +3,22 @@ layout: default
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">{{ site.title }}</h1>
-
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in site.posts limit:5 %}
       <li>
         <a href="{{ post.url }}">
           <div class="post-item {% if post.featured == true %}featured{% endif %}">
             <div class="post-item-image" style="background-image: url({{ post.image_path }});">
               <div class="post-item-overlay"></div>
-              <h2 class="text-center post-item-title">{{ post.title }}</h2>
+              <div class="post-item-container">
+                <div class="wrapper">
+                  <div class="post-item-box">
+                    <p class="text-center post-item-date">{{ post.date | date: '%B %d, %Y'}}</p>
+                    <h2 class="text-center post-item-title">{{ post.title }}</h2>
+                    <p class="text-center post-item-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}</p>
+                  </div>
+                </div>
+              </div>
             </div>
 
           </div>
