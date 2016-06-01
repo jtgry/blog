@@ -263,12 +263,6 @@
   padding-top: 7%;
   position: absolute;
 }
-.post-item-box{
-  width: auto;
-  height: 100%;
-  padding: 3em 4em 3em;
-  background: rgba(255,255,255,0.9);
-}
 
 .post-item-title{
     font-size: 2rem;
@@ -335,9 +329,7 @@
 .post-item.featured .post-item-container{
     padding-top: 5%;
 }
-.post-item.featured .post-item-box{
-  padding: 4em 4em 6em;
-}
+
 .post-item.featured .post-item-title{
     font-size: 3rem;
 }
