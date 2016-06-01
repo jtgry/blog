@@ -12,11 +12,9 @@ layout: default
               <div class="post-item-overlay"></div>
               <div class="post-item-container">
                 <div class="wrapper">
-                  <div class="post-item-box">
                     <p class="text-center post-item-date">{{ post.date | date: '%B %d, %Y'}}</p>
                     <h2 class="text-center post-item-title">{{ post.title }}</h2>
                     <p class="text-center post-item-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}</p>
-                  </div>
                 </div>
               </div>
             </div>
