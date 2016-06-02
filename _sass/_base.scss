@@ -21,6 +21,8 @@ body {
   line-height: $base-line-height;
   color: $text-color;
   background-color: $background-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   font-feature-settings: "kern";
   -webkit-font-feature-settings: "kern";
