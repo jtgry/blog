@@ -64,6 +64,7 @@ p {
 }
 
 
+
 /**
  * Images
  */
@@ -150,6 +151,16 @@ blockquote {
     > :last-child {
         margin-bottom: 0;
     }
+}
+.post-content blockquote p:first-of-type:first-letter {
+  font-family: $base-font-family;
+  font-size: 2rem;
+  font-weight: $base-font-weight;
+  letter-spacing: $base-letter-spacing;
+  line-height: $base-line-height;
+  float: none;
+  margin: 0;
+  padding: 0;
 }
 
 
