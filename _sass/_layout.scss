@@ -133,6 +133,12 @@
   width: 140%;
   margin-left: -20%;
 }
+@include media-query($on-laptop) {
+  .post-content img{
+    width: 100%;
+    margin: 0;
+  }
+}
 .post-item{
   float: left;
   width: 48%;
