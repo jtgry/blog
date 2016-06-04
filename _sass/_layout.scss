@@ -11,7 +11,7 @@
 
 .site-title {
     font-family: $header-font-family;
-    font-size: 1.6rem;
+    font-size: 4rem;
     text-transform: uppercase;
     letter-spacing: 1rem;
 
@@ -171,6 +171,12 @@
     margin-bottom: -.2em;
     color: $white-color;
 }
+.post-item-hr{
+  border: 0;
+  width: 3em;
+  margin: 1em auto;
+  border-bottom: .3em solid $white-color
+}
 .post-item-excerpt {
   font-style: italic;
   margin-bottom: -1em;
@@ -229,13 +235,16 @@
   .post-item-excerpt {
     display: none;
   }
+  .post-item-hr {
+    display: none;
+  }
 }
 .post-item.featured .post-item-container{
     padding-top: 15%;
 }
 
 .post-item.featured .post-item-title{
-    font-size: 3rem;
+    font-size: 4rem;
 }
 .post-item.featured .post-item-excerpt {
   font-size: 1.4rem;

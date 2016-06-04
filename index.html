@@ -11,9 +11,10 @@ layout: default
             <div class="post-item-image" style="background-image: url({{ post.image_path }});">
               <div class="post-item-overlay"></div>
               <div class="post-item-container">
-                <div class="wrapper">
-                    <p class="text-center post-item-date">{{ post.date | date: '%B %d, %Y'}}</p>
-                    <h2 class="text-center post-item-title">{{ post.title }}</h2>
+                <div class="text-center wrapper animated fadeInUp">
+                    <p class="post-item-date">{{ post.date | date: '%B %d, %Y'}}</p>
+                    <h2 class="post-item-title">{{ post.title }}</h2>
+                    <hr class="post-item-hr">
                     <p class="text-center post-item-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}</p>
                 </div>
               </div>
