@@ -6,7 +6,7 @@
     // Positioning context for the mobile navigation icon
     text-align: center;
     border-bottom: 1px solid $grey-color-light;
-        padding: 2em 0;
+    padding: 2em 0;
 }
 
 .site-title {
@@ -14,13 +14,22 @@
     font-size: 4rem;
     text-transform: uppercase;
     letter-spacing: 1rem;
-
 }
 .site-title:hover {
     text-decoration: none;
-
 }
-
+@include media-query($on-laptop) {
+  .site-title {
+    font-size: 3rem;
+    letter-spacing: .7rem;
+  }
+}
+@include media-query($on-palm) {
+  .site-title {
+    font-size: 1.2rem;
+    letter-spacing: .5rem;
+  }
+}
 .site-nav {
     text-align: center;
     line-height: 56px;
@@ -44,16 +53,7 @@
 
 
 
-/**
- * Site footer
- */
-.site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
-    float: left;
-    width: 100%;
-    margin: 0 auto;
-}
+
 /**
  * Page content
  */
@@ -317,4 +317,15 @@
     color: $white-color;
     font-size: 2rem;
   }
+}
+/**
+ * Site footer
+ */
+.site-footer {
+    border-top: 1px solid $grey-color-light;
+    padding: $spacing-unit 0;
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
