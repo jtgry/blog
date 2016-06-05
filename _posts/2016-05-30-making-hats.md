@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Making Hats
+title: Saying Goodbye
 date: 2016-05-31T00:42:00.000Z
 categories: jekyll
 image_path: /images/hickorycreek.jpg

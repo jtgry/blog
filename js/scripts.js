@@ -1,10 +1,10 @@
 $(document).ready(function () {
   var classes = ['1','2','3'];
-    $('.product-item').each(function(i) {
+    $('.post-item').each(function(i) {
         $(this).addClass(
           classes[Math.floor(Math.random()*classes.length)]);
     });
-    $('.half-column').each(function(i) {
+    $('.post-item .featured').each(function(i) {
         $(this).addClass(
           classes[Math.floor(Math.random()*classes.length)]);
     });
