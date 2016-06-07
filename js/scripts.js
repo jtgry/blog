@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  $('body').css('display', 'none');
+  $('body').fadeIn(500);
   var classes = ['1','2','3'];
     $('.post-item').each(function(i) {
         $(this).addClass(
